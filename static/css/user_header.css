@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+    font-size: 30pt;
+    padding: 10px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(144, 144, 144);
+    margin-bottom: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+li:first-child{
+    font-size: 20pt;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button {
+    background-color: rgb(57, 58, 70);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button:hover{
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.button:active {
+    background-color: rgb(51, 51, 57);
+}
+
+/* Screens */
+@media (min-width: 150px) and (max-width: 300px){
+    h1 {
+        font-size: 15pt;
+    }
+    li {
+        margin-left: 7px;
+    }
+    li:first-child {
+        visibility: hidden;
+        display: none;
+    }
+    .button {
+        font-size: 10pt;
+        padding: 5px 10px;
+    }
+}
+@media (min-width: 300px) and (max-width: 650px) {
+    h1 {
+        font-size: 25pt;
+    }
+    li {
+        margin-left: 15px;
+    }
+    li:first-child {
+        visibility: hidden;
+        display: none;
+    }
+    .button {
+        font-size: 13pt;
+        padding: 5px 10px;
+    }
+}

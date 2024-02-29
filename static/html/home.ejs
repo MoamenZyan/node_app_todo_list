@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="form.css">
+    <title>LEON</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LEON</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="form_div login_form">
+                <form id="myForm">
+                    <div class="input_div">
+                        <div id="username_icon"></div>
+                        <input type="text" class="text-input" placeholder="Username" name="username">
+                    </div>
+                    <div class="input_div">
+                        <div id="password_icon" class="hide"></div>
+                        <input type="password" class="text-input" name="password" id="password_input" placeholder="Password">
+                    </div>
+                    <div id="checkbox_div">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Remember Me</label>
+                    </div>
+                    <button type="submit" id="form_button">Login</button>
+                </form>
+                <a href="/signup">Signup For Free</a>
+                <div id="result"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Made By Moamen Zyan</h2>
+    </footer>
+    <script src="password_input.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

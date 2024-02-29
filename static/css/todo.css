@@ -1,0 +1,172 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo_div {
+position: relative;
+    border: 1px solid white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 70%;
+    min-height: 300px;
+}
+
+.task_main {
+    width: 80%;
+    flex: 1;
+}
+
+.todo_header{
+    border: 1px solid white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo_header p{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    font-weight: 700;
+}
+
+.add_todo {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.add_todo button {
+    background-color: rgb(57, 58, 70);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.no_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(57, 58, 70);
+}
+
+#todo {
+    width: 100%;
+    flex: 1;
+}
+
+.todo_info {
+    /* border: 1px solid white; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(57, 58, 70);
+    border: 1px solid white;
+}
+
+.todo_info p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    padding: 5px 0px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.todo_info:hover > .todo_operations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo_operations {
+    border-right: 1px solid white;
+    display: none;
+}
+
+
+#remove_icon {
+    cursor: pointer;
+    background: url("remove.png") no-repeat center;
+    width: 50px;
+    height: 30px;
+}
+
+#check_icon {
+    cursor: pointer;
+    background: url("check.png") no-repeat center;
+    width: 50px;
+    height: 30px;
+}
+
+/* Screens */
+@media (min-width: 150px) and (max-width: 250px) {
+    .todo_div{
+        width: 100%;
+    }
+    .todo_header p{
+        padding: 10px 0px;
+        font-size: 8pt;
+    }
+    
+    .todo_info p {
+        font-size: 7pt;
+        padding: 10px 0px;
+    }
+    #remove_icon {
+        width: 30px;
+        height: 30px;
+    }
+    #check_icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+    .todo_div{
+        width: 100%;
+    }
+    .todo_header p{
+        padding: 10px 0px;
+        font-size: 12pt;
+    }
+    
+    .todo_info p {
+        font-size: 9pt;
+        padding: 10px 0px;
+    }
+    #remove_icon {
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+    }
+    #check_icon {
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/user_header.css">
+    <link rel="stylesheet" href="/body.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/todo.css">
+    <link rel="stylesheet" href="/form_popup.css">
+    <title><%=user%> | List</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div><h1>LEON</h1></div>
+            <div>
+                <ul>
+                    <li><%=user%></li>
+                    <li class="button" id="settings">Settings</li>
+                    <li class="button" id="logout">logout</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="section">
+        <div class="container">
+            <div class="todo_div">
+                <div class="todo_header">
+                    <p>Description</p>
+                    <p>Deadline</p>
+                    <p>Status</p>
+                </div>
+                <div id="todo" class="no_items"></div>
+                <div class="add_todo">
+                    <button id="popup_form_button">Add Task</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="form_popup">
+        <h2>Task Info</h2>
+        <form id="task_form">
+            <label for="desc_input">Description</label>
+            <input type="text" name="description" id="desc_input" placeholder="Task Description">
+            <label for="deadline">Deadline</label>
+            <input type="date" name="deadline" id="deadline" placeholder="Task Deadline">
+            <button id="add_task_button">Add Task</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <footer>
+        <h2>Made By Moamen Zyan</h2>
+    </footer>
+    <script src="/settings_redirect.js"></script>
+    <script src="/todo.js"></script>
+    <script src="/logout.js"></script>
+</body>
+</html>

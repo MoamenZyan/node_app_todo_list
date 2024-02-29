@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="form.css">
+    <title>LEON | Signup</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LEON</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="form_div signup_form">
+                <form id="myForm">
+                    <div class="input_div">
+                        <div id="username_icon"></div>
+                        <input type="text" class="text-input" placeholder="Username" name="username">
+                    </div>
+                    <div class="input_div">
+                        <div id="password_icon" class="hide"></div>
+                        <input type="password" class="text-input" name="password" id="password_input" placeholder="Password">
+                    </div>
+                    <div class="input_div">
+                        <div id="email_icon"></div>
+                        <input type="text" class="text-input" name="email" placeholder="Email">
+                    </div>
+                    <div class="input_div">
+                        <div id="phone_icon"></div>
+                        <input type="text" class="text-input" name="phone" placeholder="Phone">
+                    </div>
+                    <div class="input_div">
+                        <div id="address_icon"></div>
+                        <input type="text" class="text-input" name="address" placeholder="Address">
+                    </div>
+                    <div class="input_div">
+                        <div id="age_icon"></div>
+                        <input type="number" class="text-input" name="age" placeholder="Age" maxlength="2">
+                    </div>
+                    <button type="submit" id="form_button">Signup</button>
+                </form>
+                <div id="result"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Made By Moamen Zyan</h2>
+    </footer>
+    <script src="password_input.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

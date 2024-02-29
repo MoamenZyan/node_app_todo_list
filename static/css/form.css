@@ -1,0 +1,163 @@
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form_div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(159, 159, 159);
+    margin: auto;
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.signup_form {
+    top: 25px;
+}
+
+.login_form {
+    top: 130px;
+}
+
+.text-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    caret-color: white;
+    padding: 15px 10px 15px 5px;
+}
+
+.input_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(39, 39, 51);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#username_icon {
+    background: url("user.png") center no-repeat;
+    width: 40px;
+    height: 40px;
+    padding: 25px;
+}
+
+#email_icon {
+    background: url("email.png") center no-repeat;
+    width: 40px;
+    height: 40px;
+    padding: 25px;
+}
+#phone_icon {
+    background: url("phone.png") center no-repeat;
+    width: 40px;
+    height: 40px;
+    padding: 25px;
+}
+#address_icon {
+    background: url("location.png") center no-repeat;
+    width: 40px;
+    height: 40px;
+    padding: 25px;
+}
+
+#age_icon {
+    background: url("age.png") center no-repeat;
+    width: 40px;
+    height: 40px;
+    padding: 25px;
+}
+
+.hide {
+    background: url("invisible.png") center no-repeat;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.show {
+    background: url("show.png") center no-repeat;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#password_icon:active{
+    background-color: rgb(98, 98, 98);
+    transition: 0.1s;
+}
+
+#checkbox_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#checkbox{
+    width: 15px;
+    height: 15px;
+}
+
+#checkbox_div label{
+    font-size: 15pt;
+    padding: 10px;
+}
+
+#form_button {
+    padding: 10px;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 15px;
+    color:rgb(39, 39, 51);
+    font-size: 15pt;
+    font-weight: 700;
+    background-color: rgb(159, 159, 159);
+    border: none;
+}
+
+a {
+    font-size: 13pt;
+    margin-top: 20px;
+    color: rgb(159, 159, 159);
+}
+
+#result {
+    display: none;
+    visibility: hidden;
+}
+
+/* Screens */
+@media (max-width: 480px){
+    .form_div{
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1070px){
+    .form_div{
+        width: 60%;
+    }
+    #form_button {
+        width: 40%;
+    }
+}

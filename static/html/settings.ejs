@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/user_header.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/form.css">
+    <link rel="stylesheet" href="/body.css">
+    <title><%=username%> | Settings</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div><h1>LEON</h1></div>
+            <div>
+                <ul>
+                    <li><%=username%></li>
+                    <li class="button" id="logout">logout</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="form_div signup_form">
+                <form id="myForm">
+                    <div class="input_div">
+                        <div id="username_icon"></div>
+                        <input type="text" class="text-input" placeholder="Username" name="username" value="<%=username%>">
+                    </div>
+                    <div class="input_div">
+                        <div id="email_icon"></div>
+                        <input type="text" class="text-input" name="email" placeholder="Email" value="<%=email%>">
+                    </div>
+                    <div class="input_div">
+                        <div id="phone_icon"></div>
+                        <input type="text" class="text-input" name="phone" placeholder="Phone" value="<%=phone_number%>">
+                    </div>
+                    <div class="input_div">
+                        <div id="address_icon"></div>
+                        <input type="text" class="text-input" name="address" placeholder="Address" value="<%=address%>">
+                    </div>
+                    <div class="input_div">
+                        <div id="age_icon"></div>
+                        <input type="number" class="text-input" name="age" placeholder="Age" maxlength="2" value="<%=age%>">
+                    </div>
+                    <button type="submit" id="form_button">Save</button>
+                </form>
+                <div id="result"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Made By Moamen Zyan</h2>
+    </footer>
+    <script src="/user_update.js"></script>
+    <script src="/logout.js"></script>
+</body>
+</html>

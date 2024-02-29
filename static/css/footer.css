@@ -1,0 +1,25 @@
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(27, 25, 44);
+    margin-top: 30px;
+}
+
+footer h2 {
+    font-size: 18pt;
+}
+
+/* Screens */
+
+@media (min-width: 150px) and (max-width: 250px) {
+    footer h2 {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+    footer h2 {
+        font-size: 15pt;
+    }
+}
